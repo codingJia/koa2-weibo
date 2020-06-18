@@ -2,10 +2,14 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
   <body>
     <h1><%= title %></h1>
+    <h4><%= locals.name%></h4>
     <p>EJS Welcome to <%= title %></p>
+    <%- include('widgets/blog-list.ejs', { blogList }) %>
+    <br />
+    <%- include('widgets/user-info.ejs', { flag }) %>
   </body>
 </html>
