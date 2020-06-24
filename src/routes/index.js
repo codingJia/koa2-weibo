@@ -47,4 +47,5 @@ router.get('/loadMore/:username/:pageIndex', async (ctx, next) => {
     pageIndex,
   }
 })
+
 module.exports = router
