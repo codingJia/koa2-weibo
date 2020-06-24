@@ -33,7 +33,7 @@ function set(key, val, timeout = 60 * 60) {
  * @param {string} key 键
  */
 function get(key) {
-  const promise = new Promise((resolve, reject) => {
+  return new Promise((resolve, reject) => {
     redisClient.get(key, (err, val) => {
       if (err) {
         reject(err)
